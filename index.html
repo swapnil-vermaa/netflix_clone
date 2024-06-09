@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        position: absolute;
+
+    }
+
+    .content {
+        position: absolute;
+        text-align: left;
+        font-size: 50px;
+        margin-left: 15px;
+        margin-top: 1px;
+    }
+
+    .boxcontainer {
+        position: absolute;
+        text-align: center;
+        
+
+    }
+    .newmember{
+        text-align: left;
+    }
+
+</style>
+
+<body class="overflow-hidden">
+    <div class="container relative h-screen">
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <div class=" absolute top-1 left-5 content font-extrabold text-red-600">NETFLIX</div>
+        </div>
+        <img class=" w-full h-full bg-cover bg-center bg-no-repeat object-cover  " src="bg.webp" alt="">
+
+        <div class=" boxcontainer inset-0 right flex-col p-8   text-lg relative   flex justify-center items-center h-full ">
+           
+            <div class="bg-black bg-opacity-75 rounded-sm p-8  text-center">
+                <h1 class="text-white text-left font-extrabold text-3xl ml-2">Sign In</h1><br>
+                <input class="px-4 h-12 my-2 border-2 w-full pt-8 pb-8 bg-black bg-opacity-50 rounded-md" type="text"
+                    placeholder="Email or phone number">
+                <br>
+                <input class="px-4 h-12 my-2  pt-8 pb-8 border-2 w-full outline  bg-black bg-opacity-50  rounded-md" type="password"
+                    placeholder="Password">
+                <br>
+                <button class="bg-red-600 hover:bg-red-700 text-white my-2 py-3 w-full rounded-md font-bold ">Sign
+                    In</button><br>
+                <span class="text-white text-center text-sm my-2 cursor-pointer hover:underline ">Forgotten
+                    password?</span>
+                <br>
+                <br>
+                <br>
+                
+                <div class="flex items-center justify-start text-white ml-2">
+                    <input type="checkbox" id="tickOption" class="bg-gray-700">
+                    <label for="tickOption" class="ml-2">Remember me</label>
+                </div>
+                <div class=" newmember mt-2 text-white text-lg ml-3">New to Netflix? <span
+                        class="font-bold hover:underline cursor-pointer text-left">Sign up now.</span></div><br>
+                        <span class="text-gray-500  px-3  my-2 text-md ">This page is protected by Google reCAPTCHA<br>to ensure you're not a bot.</span><span class="text-blue-700 underline"> Learn more.</span><br>
+            </div>
+        </div>
+
+</body>
+
+
+</html>
